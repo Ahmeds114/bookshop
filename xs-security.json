@@ -1,0 +1,20 @@
+{
+    "xsappname": "bookshop-app",
+    "tenant-mode": "dedicated",
+    "scopes": [
+      {
+        "name": "$XSAPPNAME.user",
+        "description": "User role for the application"
+      }
+    ],
+    "role-templates": [
+      {
+        "name": "User",
+        "description": "Default user role",
+        "scope-references": [
+          "$XSAPPNAME.user"
+        ]
+      }
+    ]
+  }
+  
